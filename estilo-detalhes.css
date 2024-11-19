@@ -1,0 +1,134 @@
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body{
+    
+    place-items: center;
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+    url('Botafogo.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh;
+    margin: 0; 
+    
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+}
+
+img{
+    border:5px solid  #454545 ;
+    border-radius: 5px ;
+}
+
+#main-card{
+    background-color: rgba(34, 34, 34, 0.811);
+    display: grid;
+    grid-row: auto auto auto auto;
+    border: 5px solid #ffffff;
+    transform: scale(0.8); 
+    place-items: center;
+    transform-origin: top center;
+    text-align: center;
+    color: white;
+    max-width: 75%;
+    box-shadow: 5px 10px 30px white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+
+#main-card > img{
+    max-width: 100%;
+    height: auto;
+}
+
+#status{
+    border: 5px solid #ffffff;
+    display: grid;
+    place-items: center;
+    
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+#status > h2{
+    font-family: "Bebas Neue", sans-serif;
+    
+}
+
+#descricao{
+    border-top: 5px solid #454545;
+    border-bottom: 5px solid #454545;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+}
+
+#descricao > h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+a{
+    font-family: "Bebas Neue, sans-serif";
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;;
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+a:hover{
+    background-color: rgb(154, 154, 154);
+    color: black;
+    box-shadow: 5px 5px 5px white;
+}
+
+@media (min-width:768px) {
+    #main-card{
+        grid-template-areas: 'nome nome'
+                            'imagem status'
+                            'descricao descricao'
+                            'voltar voltar';
+    }
+
+    #main-card > img{
+        grid-area: imagem;
+    }
+    
+    h1{
+        grid-area: nome;
+    }
+
+    #status{
+        grid-area: status;
+        border: 0px;
+    }
+
+    #descricao{
+        grid-area: descricao;
+    }
+
+    a{
+        grid-area: voltar;
+    }
+
+    
+}

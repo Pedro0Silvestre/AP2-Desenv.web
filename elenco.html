@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elencos</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="fonts">
+    <link rel="shortcut icon" href="botafogo.svg">
+    <script src="elenco.js" defer></script>
+</head>
+<body>
+   <header>
+    <button id="masculino" class="seletor">Masculino</button>
+    <button id="feminino" class="seletor">Feminino</button>
+    <button id="all" class="seletor">All</button>
+    <button id="botao-sair" class="seletor">Sair</button>
+   </header>
+    <!-- filtro -->
+    <div id="container-filtro">
+        <div id="custom-select">
+            <select id="dropdown" onchange="clickDropDown()">
+                <option >Escolha o elenco</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="all">Elenco completo</option>
+            </select>
+        </div> 
+        
+        <h1 id="titulo-busca">Busque por um jogador(a)</h1>
+        <div class="input-wrapper">
+            <input id="filter" type="text" placeholder="jogador(a)">
+        </div>
+        
+
+   </div> 
+  
+    <article id="container">
+        
+    </article>
+    
+</body>
+</html>

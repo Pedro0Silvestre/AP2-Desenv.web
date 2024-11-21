@@ -33,7 +33,7 @@ h1{
 
 header {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-evenly; 
     align-items: center; 
     padding: 10px 20px; 
     background-color: #a8a8a8; 
@@ -101,9 +101,9 @@ header {
 @media screen and (max-width:768px) {
     #dropdown{
         display: block;
-        appearance: none; /* Remove o estilo padrão do navegador */
-            -webkit-appearance: none; /* Para navegadores WebKit */
-            -moz-appearance: none; /* Para Firefox */
+        appearance: none; 
+            -webkit-appearance: none; 
+            -moz-appearance: none; 
             background-color: #000000;
             border: 2px solid #ffffff;
             border-radius: 5px;
@@ -133,8 +133,11 @@ header {
         display: grid;
         grid-template-columns: auto; 
         place-items: center;
-            /* gap: 10px; 
-        width: 300px;  */
+         
+    }
+
+     .cards{
+        width: 70%;
     }
 
    
